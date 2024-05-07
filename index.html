@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <style>
     * {
+        font-family: "Roboto", sans-serif;
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -22,16 +28,14 @@
     }
 
     .wrapper_left {
-        /* width: 43%; */
-        background-color: red;
         padding: 20px;
     }
 
     .wrapper_right {
         /* width: 57%; */
         flex: 1;
-        background-color: aqua;
-        padding: 30px;
+        /* background-color: aqua; */
+        padding: 20px 30px;
     }
 
     .wrapper_slider {
@@ -39,69 +43,147 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* width: 100%; */
-        /* width: 200px; */
-        /* height: 500px; */
-        background-color: brown;
     }
 
     .slider_main {
         width: 450px;
         height: 450px;
-        border: 1px solid orange;
-        background-color: gray;
+        border: 3px solid orange;
+        overflow: hidden;
     }
 
     .slider_sub_list {
         width: 100%;
         height: 80px;
-        background-color: pink;
+        /* background-color: pink; */
         margin-top: 10px;
         display: flex;
-        gap: 10px;
-        justify-content: center;
+        /* gap: 10px; */
+        justify-content: space-between;
+
     }
 
     .slider_sub_item {
+        border: 2px solid orange;
         width: 80px;
         height: 80px;
-        background-color: blue;
+        /* background-color: blue; */
     }
-    
+
+    .product_name {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .product_state {
+        margin: 30px 0;
+        color: #3e3e3e;
+    }
+
+    /* .discount_price */
+    .discount {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 2px 5px;
+        color: white;
+        background-color: red;
+        transform: translateY(-3px);
+    }
+
+    .discount_price {
+        align-items: baseline;
+        gap: 10px;
+        display: flex;
+    }
+
+    .price {
+        text-decoration: line-through;
+        font-size: 18px;
+        color: #a5a2a2;
+    }
+
+    .new_price {
+        font-weight: 600;
+        font-size: 30px;
+        color: rgb(255, 25, 0);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .group_type {
+        margin: 20px 0;
+    }
+    .type_list{
+        margin: 10px 5px;
+        display: flex;
+        gap: 10px;
+    }
+    .type_item{
+        padding: 7px 15px;
+        background-color: #ededed;
+        color: #3e3e3e;
+        /* border: 2px solid orange; */
+    }
 </style>
 
 <body>
     <div class="wrapper">
         <div class="wrapper_left">
             <div class="wrapper_slider">
-                <div class="slider_main"></div>
+                <div class="slider_main">
+                    <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rblx-lq48nvxp21r4db" alt="">
+                </div>
                 <ul class="slider_sub_list">
-                    <div class="slider_sub_item"></div>
-                    <div class="slider_sub_item"></div>
-                    <div class="slider_sub_item"></div>
-                    <div class="slider_sub_item"></div>
-                    <div class="slider_sub_item"></div>
+                    <div class="slider_sub_item">
+                        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rblx-lq48nvxp21r4db" alt="">
+
+                    </div>
+                    <div class="slider_sub_item">
+                        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rblx-lq48nvxp21r4db" alt="">
+
+                    </div>
+                    <div class="slider_sub_item">
+                        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rblx-lq48nvxp21r4db" alt="">
+
+                    </div>
+                    <div class="slider_sub_item">
+                        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rblx-lq48nvxp21r4db" alt="">
+
+                    </div>
+                    <div class="slider_sub_item">
+                        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rblx-lq48nvxp21r4db" alt="">
+
+                    </div>
                 </ul>
             </div>
 
         </div>
         <div class="wrapper_right">
             <h3 class="product_name">[ 10 Túi 100 Chiếc ] Khẩu Trang 5D 3 Lớp Chống Nắng Chống Bụi Chống Tia Uv</h3>
-            <span class="product_state">Tình trạng: </span>
-            <span class="state_value">còn hàng</span>
+            <div class="product_state">
 
-            <span class="discount">-5%</span>
-            <span class="price">120.000 vnđ</span>
-            <span class="new_price">115.000 vnđ</span>
-            <h6 class="type">Loại</h6>
-            <div class="type_list">
-                <div class="type_item">50 cái trắng</div>
-                <div class="type_item">100 cái đen</div>
+                <span class="state_title">Tình trạng: </span>
+                <span class="state_value">còn hàng</span>
+            </div>
+
+            <div class="discount_price">
+                <p class="discount">-5%</p>
+                <span class="price">120.000₫</span>
+                <span class="new_price">115.000₫</span>
+            </div>
+            <div class="group_type">
+                <span class="type">Loại</span>
+                <div class="type_list">
+                    <div class="type_item">50 cái trắng</div>
+                    <div class="type_item">100 cái đen</div>
+                </div>
             </div>
             <div class="count">
-                <button class="increment"></button>
+                <button class="decrement">-</button>
                 <span class="count_value">1</span>
-                <button class="decrement"></button>
+                <button class="increment">+</button>
             </div>
             <button class="add_cart">Thêm vào giỏ hàng</button>
             <button class="buy_now">Mua ngày</button>
