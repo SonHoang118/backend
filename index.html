@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        width: 1200px;
+        height: 1000px;
+        margin: 150px auto;
+        box-shadow: 0 0 15px 6px #c3c3c336;
+        display: flex;
+    }
+
+    .wrapper_left {
+        /* width: 43%; */
+        background-color: red;
+        padding: 20px;
+    }
+
+    .wrapper_right {
+        /* width: 57%; */
+        flex: 1;
+        background-color: aqua;
+        padding: 30px;
+    }
+
+    .wrapper_slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        /* width: 200px; */
+        /* height: 500px; */
+        background-color: brown;
+    }
+
+    .slider_main {
+        width: 450px;
+        height: 450px;
+        border: 1px solid orange;
+        background-color: gray;
+    }
+
+    .slider_sub_list {
+        width: 100%;
+        height: 80px;
+        background-color: pink;
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .slider_sub_item {
+        width: 80px;
+        height: 80px;
+        background-color: blue;
+    }
+    
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper_left">
+            <div class="wrapper_slider">
+                <div class="slider_main"></div>
+                <ul class="slider_sub_list">
+                    <div class="slider_sub_item"></div>
+                    <div class="slider_sub_item"></div>
+                    <div class="slider_sub_item"></div>
+                    <div class="slider_sub_item"></div>
+                    <div class="slider_sub_item"></div>
+                </ul>
+            </div>
+
+        </div>
+        <div class="wrapper_right">
+            <h3 class="product_name">[ 10 Túi 100 Chiếc ] Khẩu Trang 5D 3 Lớp Chống Nắng Chống Bụi Chống Tia Uv</h3>
+            <span class="product_state">Tình trạng: </span>
+            <span class="state_value">còn hàng</span>
+
+            <span class="discount">-5%</span>
+            <span class="price">120.000 vnđ</span>
+            <span class="new_price">115.000 vnđ</span>
+            <h6 class="type">Loại</h6>
+            <div class="type_list">
+                <div class="type_item">50 cái trắng</div>
+                <div class="type_item">100 cái đen</div>
+            </div>
+            <div class="count">
+                <button class="increment"></button>
+                <span class="count_value">1</span>
+                <button class="decrement"></button>
+            </div>
+            <button class="add_cart">Thêm vào giỏ hàng</button>
+            <button class="buy_now">Mua ngày</button>
+        </div>
+    </div>
+</body>
+
+</html>
